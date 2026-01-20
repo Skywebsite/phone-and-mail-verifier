@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "email-phone-validator"
-version = "0.1.0"
+name = "phone-and-mail-verifier"
+version = "0.1.1"
 description = "Simple email and phone number validation library"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -37,9 +37,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Skyweb/phone-and-mail-verifier"
-Repository = "https://github.com/Skyweb/phone-and-mail-verifier"
-Issues = "https://github.com/Skyweb/phone-and-mail-verifier/issues"
+Homepage = "https://github.com/Skywebsite/phone-and-mail-verifier"
+Repository = "https://github.com/Skywebsite/phone-and-mail-verifier"
+Issues = "https://github.com/Skywebsite/phone-and-mail-verifier/issues"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
