@@ -14,10 +14,10 @@ A simple, production-ready Python package for validating email addresses and pho
 ## Installation
 
 ```bash
-pip install email-phone-validator
+pip install phone-and-mail-verifier
 ```
 
-## Quick Start
+## Quick Start >>>
 
 ```python
 from email_phone_validator import validate_email, validate_phone
