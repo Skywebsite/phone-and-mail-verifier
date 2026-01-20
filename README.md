@@ -185,7 +185,7 @@ python -m build
 
 3. **Test the installation**:
    ```bash
-   pip install email-phone-validator
+   pip install phone-and-mail-verifier==0.1.1
    ```
 
 ## Requirements
@@ -216,7 +216,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Author
 
-Your Name - youremail@gmail.com
+Your Name - skywebdev123@gmail.com
 
 ## Acknowledgments
 
