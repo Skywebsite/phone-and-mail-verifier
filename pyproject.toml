@@ -6,11 +6,11 @@ build-backend = "setuptools.build_meta"
 name = "phone-and-mail-verifier"
 version = "0.1.1"
 description = "Simple email and phone number validation library"
-readme = "README.md"
+readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.7"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "youremail@gmail.com"},
+    {name = "Skyweb Developers", email = "skywebdevelopers123@gmail.com"},
 ]
 keywords = ["email", "phone", "validation", "validator", "phonenumber"]
 classifiers = [

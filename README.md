@@ -1,4 +1,4 @@
-# email-phone-validator
+# phone-and-mail-verifier
 
 A simple, production-ready Python package for validating email addresses and phone numbers.
 
@@ -17,7 +17,7 @@ A simple, production-ready Python package for validating email addresses and pho
 pip install phone-and-mail-verifier==0.1.1
 ```
 
-## Quick Start >>>
+## Quick Start
 
 ```python
 from email_phone_validator import validate_email, validate_phone
@@ -136,8 +136,8 @@ Validates a phone number for a given country using the `phonenumbers` library.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/email-phone-validator.git
-cd email-phone-validator
+git clone https://github.com/Skywebsite/phone-and-mail-verifier.git
+cd phone-and-mail-verifier
 
 # Install in development mode
 pip install -e .
@@ -170,8 +170,8 @@ pip install build twine
 python -m build
 
 # This creates:
-# - dist/email_phone_validator-0.1.0.tar.gz
-# - dist/email_phone_validator-0.1.0-py3-none-any.whl
+# - dist/phone_and_mail_verifier-0.1.1.tar.gz
+# - dist/phone_and_mail_verifier-0.1.1-py3-none-any.whl
 ```
 
 ### Publishing to PyPI
@@ -216,7 +216,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Author
 
-Your Name - skywebdev123@gmail.com
+Skyweb Developers - skywebdevelopers123@gmail.com
 
 ## Acknowledgments
 
