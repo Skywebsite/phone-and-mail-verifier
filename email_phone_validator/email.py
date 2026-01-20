@@ -53,8 +53,8 @@ def is_valid_email(email: str) -> bool:
         return False
     
     # Local part can contain alphanumeric, dots, hyphens, underscores, plus signs
-    local_pattern = r'^[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9]$|^[a-zA-Z0-9]$'
-    if not re.match(local_pattern, local_part):
+    # Since start/end are already validated as alphanumeric, just check all chars are valid
+    if not re.match(r'^[a-zA-Z0-9._+-]+$', local_part):
         return False
     
     # Check for consecutive dots in local part
