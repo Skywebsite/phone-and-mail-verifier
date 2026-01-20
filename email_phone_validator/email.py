@@ -32,32 +32,47 @@ def is_valid_email(email: str) -> bool:
     # Remove leading/trailing whitespace
     email = email.strip()
     
-    # Basic email regex pattern
-    # This pattern checks for:
-    # - Local part (before @): alphanumeric, dots, hyphens, underscores, plus signs
-    # - @ symbol
-    # - Domain part (after @): alphanumeric, dots, hyphens
-    # - Top-level domain: 2-6 letters
-    pattern = r'^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$'
+    # Split email into local and domain parts
+    if '@' not in email:
+        return False
     
-    # More comprehensive pattern for better validation
-    # Allows for more complex email formats
-    comprehensive_pattern = r'^[a-zA-Z0-9]([a-zA-Z0-9._-]*[a-zA-Z0-9])?@[a-zA-Z0-9]([a-zA-Z0-9.-]*[a-zA-Z0-9])?\.[a-zA-Z]{2,}$'
+    parts = email.split('@')
+    if len(parts) != 2:
+        return False
     
-    # Check if email matches the pattern
-    if re.match(comprehensive_pattern, email):
-        # Additional checks
-        # Email should not start or end with dot
-        if email.startswith('.') or email.endswith('.'):
-            return False
-        # Email should not have consecutive dots
-        if '..' in email:
-            return False
-        # @ symbol should appear only once
-        if email.count('@') != 1:
-            return False
-        
-        return True
+    local_part, domain_part = parts
     
-    return False
+    # Validate local part
+    # Must not be empty, must start and end with alphanumeric
+    # Can contain dots, hyphens, underscores, and plus signs in between
+    if not local_part or len(local_part) == 0:
+        return False
+    
+    # Local part should start and end with alphanumeric
+    if not local_part[0].isalnum() or not local_part[-1].isalnum():
+        return False
+    
+    # Local part can contain alphanumeric, dots, hyphens, underscores, plus signs
+    local_pattern = r'^[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9]$|^[a-zA-Z0-9]$'
+    if not re.match(local_pattern, local_part):
+        return False
+    
+    # Check for consecutive dots in local part
+    if '..' in local_part:
+        return False
+    
+    # Validate domain part
+    if not domain_part or '.' not in domain_part:
+        return False
+    
+    # Domain should have valid structure
+    domain_pattern = r'^[a-zA-Z0-9]([a-zA-Z0-9.-]*[a-zA-Z0-9])?\.[a-zA-Z]{2,}$'
+    if not re.match(domain_pattern, domain_part):
+        return False
+    
+    # Check for consecutive dots in domain
+    if '..' in domain_part:
+        return False
+    
+    return True
 
