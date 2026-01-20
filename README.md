@@ -14,7 +14,7 @@ A simple, production-ready Python package for validating email addresses and pho
 ## Installation
 
 ```bash
-pip install phone-and-mail-verifier
+pip install phone-and-mail-verifier==0.1.1
 ```
 
 ## Quick Start >>>
