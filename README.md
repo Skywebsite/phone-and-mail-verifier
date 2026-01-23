@@ -1,6 +1,8 @@
 # phone-and-mail-verifier
 
-A simple, production-ready Python package for validating email addresses and phone numbers.
+A simple, production-ready Python package for validating email addresses and phone numbers. Built by **Skyweb IT Solutions Private Limited** - your trusted partner for software development solutions.
+
+**Website:** [https://www.skywebdev.xyz](https://www.skywebdev.xyz) | **Email:** [official@skywebdev.xyz](mailto:official@skywebdev.xyz)
 
 ## Features
 
@@ -14,7 +16,7 @@ A simple, production-ready Python package for validating email addresses and pho
 ## Installation
 
 ```bash
-pip install phone-and-mail-verifier==0.1.1
+pip install phone-and-mail-verifier==0.1.2
 ```
 
 ## Quick Start
@@ -170,8 +172,8 @@ pip install build twine
 python -m build
 
 # This creates:
-# - dist/phone_and_mail_verifier-0.1.1.tar.gz
-# - dist/phone_and_mail_verifier-0.1.1-py3-none-any.whl
+# - dist/phone_and_mail_verifier-0.1.2.tar.gz
+# - dist/phone_and_mail_verifier-0.1.2-py3-none-any.whl
 ```
 
 ### Publishing to PyPI
@@ -185,7 +187,7 @@ python -m build
 
 3. **Test the installation**:
    ```bash
-   pip install phone-and-mail-verifier==0.1.1
+   pip install phone-and-mail-verifier==0.1.2
    ```
 
 ## Requirements
@@ -214,12 +216,22 @@ MIT License - see LICENSE file for details.
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Author
+## Author & Company
 
-Skyweb Developers - skywebdevelopers123@gmail.com
+**Skyweb IT Solutions Private Limited**
+
+- 🌐 **Website:** [https://www.skywebdev.xyz](https://www.skywebdev.xyz)
+- 📧 **Email:** [official@skywebdev.xyz](mailto:official@skywebdev.xyz)
+- 💼 **Services:** Software Development, Web Development, IT Solutions
+
+We specialize in creating robust, production-ready software solutions. This package is part of our commitment to providing high-quality open-source tools for the developer community.
 
 ## Acknowledgments
 
 - Uses [phonenumbers](https://github.com/daviddrysdale/python-phonenumbers) library for phone validation
-- Built with ❤️ for the Python community
+- Built with ❤️ by [Skyweb IT Solutions Private Limited](https://www.skywebdev.xyz) for the Python community
+
+---
+
+**Need custom software solutions?** Contact us at [official@skywebdev.xyz](mailto:official@skywebdev.xyz) or visit [https://www.skywebdev.xyz](https://www.skywebdev.xyz)
 

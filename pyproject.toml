@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "phone-and-mail-verifier"
-version = "0.1.1"
-description = "Simple email and phone number validation library"
+version = "0.1.2"
+description = "Production-ready Python library for email and phone number validation. Validate emails and phone numbers with support for multiple countries. Built by Skyweb IT Solutions Private Limited."
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.7"
 license = {text = "MIT"}
 authors = [
-    {name = "Skyweb Developers", email = "skywebdevelopers123@gmail.com"},
+    {name = "Skyweb IT Solutions Private Limited", email = "official@skywebdev.xyz"},
 ]
-keywords = ["email", "phone", "validation", "validator", "phonenumber"]
+keywords = ["email", "phone", "validation", "validator", "phonenumber", "email-validator", "phone-validator", "email-validation", "phone-validation", "contact-validation", "form-validation", "data-validation", "python", "skyweb", "it-solutions"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -37,7 +37,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Skywebsite/phone-and-mail-verifier"
+Homepage = "https://www.skywebdev.xyz"
+Documentation = "https://github.com/Skywebsite/phone-and-mail-verifier"
 Repository = "https://github.com/Skywebsite/phone-and-mail-verifier"
 Issues = "https://github.com/Skywebsite/phone-and-mail-verifier/issues"
 
